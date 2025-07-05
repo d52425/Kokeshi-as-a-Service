@@ -1,4 +1,4 @@
-import{V as B,C as W,r as N,s as C}from"./index-CDt84Nyq.js";class U{parse(j){let r="",u=0,v=0,A=0;const o=new B,g=new W,d=new B,M=new N,y=[];function w(e){let m=0,x=0,l=0;const f=e.geometry,t=new C,i=f.getAttribute("position"),s=f.getAttribute("normal"),p=f.getAttribute("uv"),V=f.getIndex();if(r+="o "+e.name+`
+import{V as B,C as W,r as N,s as C}from"./index-CrohNCBe.js";class U{parse(j){let r="",u=0,v=0,A=0;const o=new B,g=new W,d=new B,M=new N,y=[];function w(e){let m=0,x=0,l=0;const f=e.geometry,t=new C,i=f.getAttribute("position"),s=f.getAttribute("normal"),p=f.getAttribute("uv"),V=f.getIndex();if(r+="o "+e.name+`
 `,e.material&&e.material.name&&(r+="usemtl "+e.material.name+`
 `),i!==void 0)for(let n=0,a=i.count;n<a;n++,m++)o.fromBufferAttribute(i,n),o.applyMatrix4(e.matrixWorld),r+="v "+o.x+" "+o.y+" "+o.z+`
 `;if(p!==void 0)for(let n=0,a=p.count;n<a;n++,l++)M.fromBufferAttribute(p,n),r+="vt "+M.x+" "+M.y+`
@@ -13,4 +13,4 @@ import{V as B,C as W,r as N,s as C}from"./index-CDt84Nyq.js";class U{parse(j){le
 `,l!==void 0){for(let t=0,i=l.count;t<i;t++,m++)o.fromBufferAttribute(l,t),o.applyMatrix4(e.matrixWorld),r+="v "+o.x+" "+o.y+" "+o.z,f!==void 0&&(g.fromBufferAttribute(f,t).convertLinearToSRGB(),r+=" "+g.r+" "+g.g+" "+g.b),r+=`
 `;r+="p ";for(let t=1,i=l.count;t<=i;t++)r+=u+t+" ";r+=`
 `}u+=m}return j.traverse(function(e){e.isMesh===!0&&w(e),e.isLine===!0&&z(e),e.isPoints===!0&&L(e)}),r}}export{U as OBJExporter};
-//# sourceMappingURL=OBJExporter-CZLCZbBP.js.map
+//# sourceMappingURL=OBJExporter-DMReACOy.js.map
